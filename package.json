@@ -1,14 +1,14 @@
 {
   "name": "easy-sftp-deploy",
-  "version": "1.4.0",
+  "version": "1.4.2",
   "description": "Easily deploy files and directories to a server with sftp",
-  "repository": "https://github.com/rubikscraft/easy-sftp-deploy",
-  "author": "Rubikscraft <contact@rubikscraft.nl>",
+  "repository": "https://github.com/caramelfur/easy-sftp-deploy",
+  "author": "Caramel <contact@caramelfur.dev>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/rubikscraft/easy-sftp-deploy/issues"
+    "url": "https://github.com/caramelfur/easy-sftp-deploy/issues"
   },
-  "homepage": "https://github.com/rubikscraft/easy-sftp-deploy",
+  "homepage": "https://github.com/caramelfur/easy-sftp-deploy",
   "keywords": [
     "upload",
     "deploy",
@@ -34,15 +34,15 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
-    "micromatch": "^4.0.5",
-    "ssh2-sftp-client": "^9.0.4",
-    "yargs": "^17.6.0",
-    "zod": "^3.19.1"
+    "micromatch": "^4.0.7",
+    "ssh2-sftp-client": "^11.0.0",
+    "yargs": "^17.7.2",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/micromatch": "^4.0.2",
-    "@types/ssh2-sftp-client": "^7.1.0",
-    "@types/yargs": "^17.0.13",
-    "typescript": "^4.8.4"
+    "@types/micromatch": "^4.0.9",
+    "@types/ssh2-sftp-client": "^9.0.3",
+    "@types/yargs": "^17.0.33",
+    "typescript": "^5.5.4"
   }
 }

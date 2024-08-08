@@ -1,6 +1,6 @@
-import { DeployToSftp, DeployToSftpFromFile } from '.';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
+import { DeployToSftpFromFile } from '.';
 import { SftpLogger, SftpLoggerNoColor } from './logger';
 
 async function main(): Promise<boolean> {
@@ -25,9 +25,11 @@ async function main(): Promise<boolean> {
   );
 }
 
-main().then(success => {
-  process.exit(success ? 0 : 1);
-}).catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+main()
+  .then((success) => {
+    process.exit(success ? 0 : 1);
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

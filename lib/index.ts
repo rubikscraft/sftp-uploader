@@ -1,7 +1,7 @@
+import fs from 'fs';
 import { sftpConfig, SftpConfig } from './config';
 import { ExecuteDeployment } from './deployment';
 import { SftpLogger, SftpLoggerType } from './logger';
-import fs from 'fs';
 
 export async function DeployToSftp(
   config: SftpConfig,
@@ -12,7 +12,7 @@ export async function DeployToSftp(
     logger('Invalid config', { type: 'error' });
     logger(
       'Since this package has just been released, the json scheme can still change. ' +
-        'Please check here for more info: https://github.com/rubikscraft/easy-sftp-deploy#releases',
+        'Please check here for more info: https://github.com/caramelfur/easy-sftp-deploy#releases',
     );
     return false;
   }

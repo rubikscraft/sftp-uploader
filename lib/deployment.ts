@@ -6,7 +6,7 @@ import {
   SftpConfig,
   SftpCredentialConfig,
   SftpDeployConfig,
-  SftpHostConfig
+  SftpHostConfig,
 } from './config';
 import { SftpLoggerType } from './logger';
 import Parallelizor from './parallelizor';
@@ -169,7 +169,7 @@ export async function ExecuteDeployment(
           return false;
         }
       }, i === found.length - 1);
-      
+
       if (result.includes(false)) {
         return false;
       }
